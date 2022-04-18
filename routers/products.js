@@ -280,4 +280,4 @@ router.get(`/get/featuredProducts/:count`, async (req, res) => {
 //   }
 // );
 
-module.exports = router; // exporting the whole moduleukjkadsasdasd
+module.exports = router; // exporting the whole moduleukjkadsasdasdsdfsdf
