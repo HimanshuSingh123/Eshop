@@ -29,7 +29,7 @@ router.get("/:categoryID", async (req, res) => {
       .status(500)
       .json({ success: false, message: "ID couldn't be found" });
   }
-  return res.status(200).json({ success: true, message: "id found" });
+  return res.status(200).json({ success: true, message: "id found", category });
 });
 
 //updating category

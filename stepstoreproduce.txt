@@ -1,0 +1,85 @@
+first register
+{
+    "name": "adminAPITEST",
+    "email": "adminAPITEST@dot.com",
+    "password": "123456",
+    "street": "fifth ave",
+    "apartment": "4637",
+    "city": "tdot",
+    "zip": "l4t2h7",
+    "country": "nacada",
+    "phone": "23224647",
+    "isAdmin": true
+}
+
+adminuserID: 625d5ccd46a63d4f115cda85 (adminAPITEST1@dot.com)
+nonadminID: 625d5d1f46a63d4f115cda87 (customerAPITEST1@dot.com)
+
+login
+
+
+{
+    "email": "adminAPITEST@dot.com",
+    "password": "123456"
+}
+
+
+create new category
+625d5df646a63d4f115cda8d / tvs
+625d5e5646a63d4f115cda92 / keyboards
+{
+    "name": "category1",
+    "color": "#444",
+    "icon": "icon_computer"
+}
+
+{
+    "name": "category2",
+    "color": "#444",
+    "icon": "icon_games"
+}
+
+create products
+
+625c8fc83acb9b61f5745b47
+
+get product count
+http://localhost:3000/api/v1/products/get/count
+get featrued produced
+http://localhost:3000/api/v1/products/get/featuredProducts/:4
+
+
+post new order
+{
+    "orderItems" : [
+        {
+            "quantity": 2,
+            "product" : "625c885e632477310029758d"
+        }
+    ],
+    "shippingAddress1" : "Flowers Street , 45",
+    "shippingAddress2" : "1-B",
+    "city": "Prague",
+    "zip": "00000",
+    "country": "Czech Republic",
+    "phone": "+420702241333",
+    "user": "625b17251ea5af81e68dbf5a"
+}
+
+get existing orders based on user, get users for id and get products for product ids
+update order status
+
+show isAdmin false user trying to get Orders.
+
+
+
+this project is a RESTful API eshop database which acts as the backend of an online store. Considers queries, relational databases,
+JWT Authentication, File upload, and API security. 
+
+
+
+
+
+
+
+
